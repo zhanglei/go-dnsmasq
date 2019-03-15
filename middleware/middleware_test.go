@@ -3,8 +3,8 @@ package middleware
 import (
 	"testing"
 
-	"github.com/semihalev/sdns/config"
-	"github.com/semihalev/sdns/ctx"
+	"github.com/faceair/go-dnsmasq/config"
+	"github.com/faceair/go-dnsmasq/ctx"
 	"github.com/stretchr/testify/assert"
 )
 

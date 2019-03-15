@@ -3,11 +3,10 @@ package dnsutil
 import (
 	"testing"
 
-	"github.com/semihalev/sdns/middleware"
-	"github.com/semihalev/sdns/middleware/blocklist"
-
+	"github.com/faceair/go-dnsmasq/config"
+	"github.com/faceair/go-dnsmasq/middleware"
+	"github.com/faceair/go-dnsmasq/middleware/blocklist"
 	"github.com/miekg/dns"
-	"github.com/semihalev/sdns/config"
 )
 
 func TestExtractAddressFromReverse(t *testing.T) {

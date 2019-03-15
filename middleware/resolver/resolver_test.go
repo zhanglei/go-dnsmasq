@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"github.com/miekg/dns"
-	"github.com/semihalev/sdns/authcache"
-	"github.com/semihalev/sdns/dnsutil"
+	"github.com/faceair/go-dnsmasq/authcache"
+	"github.com/faceair/go-dnsmasq/dnsutil"
 	"github.com/stretchr/testify/assert"
 )
 

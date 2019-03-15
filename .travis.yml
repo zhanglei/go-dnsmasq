@@ -14,10 +14,10 @@ matrix:
 git:
   depth: 10
 
-go_import_path: github.com/semihalev/sdns
+go_import_path: github.com/faceair/go-dnsmasq
 
-script: 
+script:
   - make test
- 
+
 after_success:
   - bash <(curl -s https://codecov.io/bash)

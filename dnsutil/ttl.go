@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/miekg/dns"
-	"github.com/semihalev/sdns/response"
+	"github.com/faceair/go-dnsmasq/response"
 )
 
 // MinimalTTL scans the message returns the lowest TTL found taking into the response.Type of the message.

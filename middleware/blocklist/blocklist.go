@@ -6,11 +6,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/semihalev/sdns/middleware"
+	"github.com/faceair/go-dnsmasq/middleware"
 
 	"github.com/miekg/dns"
-	"github.com/semihalev/sdns/config"
-	"github.com/semihalev/sdns/ctx"
+	"github.com/faceair/go-dnsmasq/config"
+	"github.com/faceair/go-dnsmasq/ctx"
 )
 
 // BlockList type

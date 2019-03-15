@@ -5,3 +5,5 @@ sdns.toml
 sdns_*
 coverage.out
 blist_data
+/vendor
+/coverage*

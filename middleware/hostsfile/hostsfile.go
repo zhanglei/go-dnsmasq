@@ -16,11 +16,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/semihalev/sdns/middleware"
+	"github.com/faceair/go-dnsmasq/middleware"
 
-	"github.com/semihalev/sdns/config"
-	"github.com/semihalev/sdns/ctx"
-	"github.com/semihalev/sdns/dnsutil"
+	"github.com/faceair/go-dnsmasq/config"
+	"github.com/faceair/go-dnsmasq/ctx"
+	"github.com/faceair/go-dnsmasq/dnsutil"
 
 	"github.com/miekg/dns"
 	"github.com/semihalev/log"

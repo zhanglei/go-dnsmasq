@@ -9,12 +9,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/semihalev/sdns/middleware"
+	"github.com/faceair/go-dnsmasq/middleware"
 
-	"github.com/semihalev/sdns/config"
-	"github.com/semihalev/sdns/ctx"
-	"github.com/semihalev/sdns/doh"
-	"github.com/semihalev/sdns/mock"
+	"github.com/faceair/go-dnsmasq/config"
+	"github.com/faceair/go-dnsmasq/ctx"
+	"github.com/faceair/go-dnsmasq/doh"
+	"github.com/faceair/go-dnsmasq/mock"
 
 	"github.com/miekg/dns"
 	"github.com/semihalev/log"

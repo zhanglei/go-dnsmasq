@@ -5,8 +5,8 @@ import (
 	"sync"
 
 	"github.com/semihalev/log"
-	"github.com/semihalev/sdns/config"
-	"github.com/semihalev/sdns/ctx"
+	"github.com/faceair/go-dnsmasq/config"
+	"github.com/faceair/go-dnsmasq/ctx"
 )
 
 type middleware struct {

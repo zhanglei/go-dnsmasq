@@ -3,13 +3,12 @@
 package main
 
 import (
-	_ "github.com/semihalev/sdns/middleware/recovery"
-	_ "github.com/semihalev/sdns/middleware/metrics"
-	_ "github.com/semihalev/sdns/middleware/accesslist"
-	_ "github.com/semihalev/sdns/middleware/ratelimit"
-	_ "github.com/semihalev/sdns/middleware/edns"
-	_ "github.com/semihalev/sdns/middleware/hostsfile"
-	_ "github.com/semihalev/sdns/middleware/blocklist"
-	_ "github.com/semihalev/sdns/middleware/cache"
-	_ "github.com/semihalev/sdns/middleware/resolver"
+	_ "github.com/faceair/go-dnsmasq/middleware/accesslist"
+	_ "github.com/faceair/go-dnsmasq/middleware/cache"
+	_ "github.com/faceair/go-dnsmasq/middleware/edns"
+	_ "github.com/faceair/go-dnsmasq/middleware/hostsfile"
+	_ "github.com/faceair/go-dnsmasq/middleware/metrics"
+	_ "github.com/faceair/go-dnsmasq/middleware/ratelimit"
+	_ "github.com/faceair/go-dnsmasq/middleware/recovery"
+	_ "github.com/faceair/go-dnsmasq/middleware/resolver"
 )

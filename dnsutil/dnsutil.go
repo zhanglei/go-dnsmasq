@@ -7,11 +7,11 @@ import (
 	"net"
 	"strings"
 
-	"github.com/semihalev/sdns/ctx"
-	"github.com/semihalev/sdns/middleware"
+	"github.com/faceair/go-dnsmasq/ctx"
+	"github.com/faceair/go-dnsmasq/middleware"
 
 	"github.com/miekg/dns"
-	"github.com/semihalev/sdns/mock"
+	"github.com/faceair/go-dnsmasq/mock"
 )
 
 // ExtractAddressFromReverse turns a standard PTR reverse record name

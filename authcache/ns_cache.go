@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/miekg/dns"
-	"github.com/semihalev/sdns/cache"
+	"github.com/faceair/go-dnsmasq/cache"
 )
 
 // NS represents a cache entry

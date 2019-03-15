@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/miekg/dns"
-	"github.com/semihalev/sdns/cache"
+	"github.com/faceair/go-dnsmasq/cache"
 	"github.com/stretchr/testify/assert"
 )
 

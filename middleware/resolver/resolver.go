@@ -9,13 +9,13 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/faceair/go-dnsmasq/authcache"
+	"github.com/faceair/go-dnsmasq/cache"
+	"github.com/faceair/go-dnsmasq/config"
+	"github.com/faceair/go-dnsmasq/dnsutil"
+	"github.com/faceair/go-dnsmasq/lqueue"
 	"github.com/miekg/dns"
 	"github.com/semihalev/log"
-	"github.com/semihalev/sdns/authcache"
-	"github.com/semihalev/sdns/cache"
-	"github.com/semihalev/sdns/config"
-	"github.com/semihalev/sdns/dnsutil"
-	"github.com/semihalev/sdns/lqueue"
 )
 
 // Resolver type
@@ -454,7 +454,7 @@ func (r *Resolver) exchange(server *authcache.AuthServer, req *dns.Msg, c *dns.C
 	}()
 
 	resp, rtt, err = c.Exchange(req, server.Host)
-	if err != nil && err != dns.ErrTruncated {
+	if err != nil {
 		if strings.Contains(err.Error(), "no route to host") && c.Net == "udp" {
 			c.Net = "tcp"
 			if len(r.cfg.OutboundIPs) > 0 {

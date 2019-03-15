@@ -57,6 +57,6 @@ func main() {
 
 const (
 	filename      = "generated.go"
-	prefixDir     = "github.com/semihalev/sdns"
+	prefixDir     = "github.com/faceair/go-dnsmasq"
 	middlewareDir = "middleware"
 )

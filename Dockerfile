@@ -2,9 +2,9 @@ ARG image=golang:1.11-alpine3.8
 
 FROM $image AS builder
 
-COPY . /go/src/github.com/semihalev/sdns/
+COPY . /go/src/github.com/faceair/go-dnsmasq/
 
-WORKDIR /go/src/github.com/semihalev/sdns
+WORKDIR /go/src/github.com/faceair/go-dnsmasq
 
 RUN apk --update --no-cache add \
 	ca-certificates \

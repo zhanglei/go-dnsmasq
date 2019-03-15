@@ -7,14 +7,14 @@ import (
 	"time"
 
 	"github.com/semihalev/log"
-	"github.com/semihalev/sdns/middleware"
-	_ "github.com/semihalev/sdns/middleware/edns"
+	"github.com/faceair/go-dnsmasq/middleware"
+	_ "github.com/faceair/go-dnsmasq/middleware/edns"
 
 	"github.com/miekg/dns"
-	"github.com/semihalev/sdns/config"
-	"github.com/semihalev/sdns/ctx"
-	"github.com/semihalev/sdns/dnsutil"
-	"github.com/semihalev/sdns/mock"
+	"github.com/faceair/go-dnsmasq/config"
+	"github.com/faceair/go-dnsmasq/ctx"
+	"github.com/faceair/go-dnsmasq/dnsutil"
+	"github.com/faceair/go-dnsmasq/mock"
 	"github.com/stretchr/testify/assert"
 )
 

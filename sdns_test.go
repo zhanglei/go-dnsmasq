@@ -15,10 +15,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/semihalev/log"
-	"github.com/semihalev/sdns/config"
-	"github.com/semihalev/sdns/middleware"
-	"github.com/semihalev/sdns/middleware/blocklist"
+	"github.com/faceair/go-dnsmasq/config"
+	"github.com/faceair/go-dnsmasq/middleware"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -147,26 +145,4 @@ func Test_start(t *testing.T) {
 	os.Stderr, _ = os.Open(os.DevNull)
 	flag.Usage()
 	os.Stderr = stderr
-}
-
-func Test_UpdateBlocklists(t *testing.T) {
-	log.Root().SetHandler(log.LvlFilterHandler(0, log.StdoutHandler))
-
-	tempDir := filepath.Join(os.TempDir(), "/sdns_temp")
-
-	Config = new(config.Config)
-	Config.Whitelist = append(Config.Whitelist, testDomain)
-	Config.Blocklist = append(Config.Blocklist, testDomain)
-
-	Config.BlockLists = []string{}
-	Config.BlockLists = append(Config.BlockLists, "https://raw.githubusercontent.com/quidsup/notrack/master/trackers.txt")
-	Config.BlockLists = append(Config.BlockLists, "https://test.dev/hosts")
-
-	blocklist := blocklist.New(Config)
-
-	err := updateBlocklists(blocklist, tempDir)
-	assert.NoError(t, err)
-
-	err = readBlocklists(blocklist, tempDir)
-	assert.NoError(t, err)
 }

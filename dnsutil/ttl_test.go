@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/miekg/dns"
-	"github.com/semihalev/sdns/response"
+	"github.com/faceair/go-dnsmasq/response"
 )
 
 // See https://github.com/kubernetes/dns/issues/121, add some specific tests for those use cases.

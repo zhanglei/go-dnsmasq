@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/miekg/dns"
-	"github.com/semihalev/sdns/mock"
+	"github.com/faceair/go-dnsmasq/mock"
 	"github.com/stretchr/testify/assert"
 )
 

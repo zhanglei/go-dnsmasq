@@ -11,12 +11,10 @@ import (
 	"runtime"
 	"time"
 
+	"github.com/faceair/go-dnsmasq/config"
+	"github.com/faceair/go-dnsmasq/middleware"
+	"github.com/faceair/go-dnsmasq/server"
 	"github.com/semihalev/log"
-	"github.com/semihalev/sdns/api"
-	"github.com/semihalev/sdns/config"
-	"github.com/semihalev/sdns/middleware"
-	"github.com/semihalev/sdns/middleware/blocklist"
-	"github.com/semihalev/sdns/server"
 )
 
 var (
@@ -85,13 +83,6 @@ func run() {
 
 	server := server.New(Config)
 	server.Run()
-
-	b := middleware.Get("blocklist")
-
-	api := api.New(Config.API, b.(*blocklist.BlockList))
-	api.Run()
-
-	go fetchBlocklists(b.(*blocklist.BlockList))
 }
 
 func main() {

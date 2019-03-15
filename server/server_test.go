@@ -18,13 +18,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/semihalev/sdns/middleware"
+	"github.com/faceair/go-dnsmasq/config"
+	"github.com/faceair/go-dnsmasq/middleware"
+	"github.com/faceair/go-dnsmasq/middleware/blocklist"
+	"github.com/faceair/go-dnsmasq/mock"
 
 	"github.com/miekg/dns"
 	"github.com/semihalev/log"
-	"github.com/semihalev/sdns/config"
-	"github.com/semihalev/sdns/middleware/blocklist"
-	"github.com/semihalev/sdns/mock"
 	"github.com/stretchr/testify/assert"
 )
 

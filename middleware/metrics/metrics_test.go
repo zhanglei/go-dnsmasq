@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	"github.com/miekg/dns"
-	"github.com/semihalev/sdns/ctx"
-	"github.com/semihalev/sdns/middleware"
-	"github.com/semihalev/sdns/mock"
+	"github.com/faceair/go-dnsmasq/ctx"
+	"github.com/faceair/go-dnsmasq/middleware"
+	"github.com/faceair/go-dnsmasq/mock"
 	"github.com/stretchr/testify/assert"
 )
 
